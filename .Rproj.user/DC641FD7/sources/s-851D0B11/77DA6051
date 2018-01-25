@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516908512207.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3135324346",
+    "id" : "77DA6051",
+    "lastKnownWriteTime" : 1515455576,
+    "last_content_update" : 1515455576,
+    "path" : "~/repos/github/listr/tests/testthat/test_parse_names.R",
+    "project_path" : "tests/testthat/test_parse_names.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

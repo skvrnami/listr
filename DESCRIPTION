@@ -1,0 +1,20 @@
+Package: listr
+Type: Package
+Title: Package for processing candidate lists data
+Version: 0.1.0
+Authors@R: person("Michael", "Škvrňák", email = "397925@mail.muni.cz",
+                  role = c("aut", "cre"))
+Description: Package that helps to parse names (mainly as they occur in candidate lists 
+    published by the Czech Statistical Office) and extract meaningful information from them 
+    such as gender, academic titles etc.
+Depends: R (>= 3.1.0)
+Imports: 
+    dplyr, 
+    purrr, 
+    stringr, 
+    zoo
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: testthat
+RoxygenNote: 6.0.1

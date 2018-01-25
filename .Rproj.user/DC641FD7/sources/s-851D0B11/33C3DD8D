@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1516904704117.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "33C3DD8D",
+    "lastKnownWriteTime" : 1516908501,
+    "last_content_update" : 1516908501118,
+    "path" : "~/repos/github/listr/R/parse_gender.R",
+    "project_path" : "R/parse_gender.R",
+    "properties" : {
+        "cursorPosition" : "25,25",
+        "scrollLine" : "17"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

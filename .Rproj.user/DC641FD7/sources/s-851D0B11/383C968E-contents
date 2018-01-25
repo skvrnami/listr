@@ -1,0 +1,13 @@
+#' First names
+#'
+#' First names and their gender division according to the data from the Czech Ministry of Interior
+#'
+#' @format A data frame with 33736 rows and 4 variables:
+#' \describe{
+#'   \item{name}{first name}
+#'   \item{males}{number of males with this name}
+#'   \item{females}{number of females with this name}
+#'   \item{prob_male}{probability that a person with a given name is a male}
+#' }
+#' @source \url{http://www.mvcr.cz}
+"first_names"
