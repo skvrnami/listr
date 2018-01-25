@@ -1,9 +1,0 @@
-{
-    "path" : "~/repos/github/listr",
-    "sortOrder" : [
-        {
-            "ascending" : true,
-            "columnIndex" : 2
-        }
-    ]
-}
