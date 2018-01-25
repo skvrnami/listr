@@ -29,7 +29,7 @@ On the other hand, it does not require calling an API with limited amount of cal
 
 ### To DO:
 
-[ ] enable custom data
+[ ] enable custom data  
 [ ] make a vignette
 
 ### Workflow
