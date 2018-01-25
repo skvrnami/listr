@@ -2,6 +2,9 @@
 
 ## Listr
 
+[![Build Status](https://travis-ci.org/skvrnami/listr.svg?branch=master)](https://travis-ci.org/skvrnami/listr)
+[![codecov](https://codecov.io/gh/skvrnami/listr/branch/master/graph/badge.svg)](https://codecov.io/gh/skvrnami/listr)
+
 R package for parsing names and extracting information from the names. 
 The main purpose of this package is to make dealing with the candidates lists 
 produced by the Czech Statistical Office easier.  
