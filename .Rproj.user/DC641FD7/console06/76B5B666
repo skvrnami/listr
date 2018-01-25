@@ -1,3 +1,144 @@
 ]0;~/repos/github/listr[?1034hMichael-MBP:listr skvrnami$ [KMichael-MBP:listr skvrnami$ git inin[Kt
 Initialized empty Git repository in /Users/skvrnami/repos/github/listr/.git/
 ]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git add -A
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git commit -m "Initial commit"
+[master (root-commit) f7111d2] Initial commit
+ 106 files changed, 2159 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .Rbuildignore
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/DC641FD7/console06/76B5B666
+ create mode 100644 .Rproj.user/DC641FD7/console06/INDEX001
+ create mode 100644 .Rproj.user/DC641FD7/cpp-definition-cache
+ create mode 100644 .Rproj.user/DC641FD7/pcs/debug-breakpoints.pper
+ create mode 100644 .Rproj.user/DC641FD7/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/DC641FD7/pcs/packages-pane.pper
+ create mode 100644 .Rproj.user/DC641FD7/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/DC641FD7/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/DC641FD7/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/DC641FD7/persistent-state
+ create mode 100644 .Rproj.user/DC641FD7/profiles-cache/file141f4396847f9.Rprof
+ create mode 100644 .Rproj.user/DC641FD7/profiles-cache/file142e0398b8347.Rprof
+ create mode 100644 .Rproj.user/DC641FD7/rmd-outputs
+ create mode 100644 .Rproj.user/DC641FD7/saved_source_markers
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/11BA853A
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/17260F14
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/2620CD33
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/2A382B2E
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/2CF41514
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/2E35798E
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/41F02957
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/43601F8B
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/4C91F09D
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/57807864
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/6EC783DB
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/777688
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/78ED6
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/812FBE5E
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/867A8945
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/8FE40A0
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/9DB54D15
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/9DECC52E
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/9FC949CC
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/A7CA5A5E
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/AD546620
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/AEB3101C
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/B02CE027
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/B538CE07
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/B594B376
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/BC261DB8
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/C3C98027
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/CC82EBED
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/D6675EFF
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/D7384571
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/DF380E22
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/F45DBE7F
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/FF6BC5C1
+ create mode 100644 .Rproj.user/DC641FD7/sources/prop/INDEX
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/1C1C7AAB-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/1FAED67B-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/312230A5-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/33C3DD8D
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/33C3DD8D-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/383C968E-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/44AE59E0
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/44AE59E0-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/54E1A923-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/77DA6051
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/77DA6051-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/8247B29F-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/82AE2AB8-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/89C61684-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/AD6932C5-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/C0F065A6
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/C0F065A6-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/C61BE400-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/CACF1311
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/CACF1311-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/D9ABA057
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/D9ABA057-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/DFB8128D-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/E53F2B9D-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/EBB1A6DD
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/EBB1A6DD-contents
+ create mode 100644 .Rproj.user/DC641FD7/sources/s-851D0B11/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 DESCRIPTION
+ create mode 100644 LICENSE
+ create mode 100644 NAMESPACE
+ create mode 100644 R/helpers.R
+ create mode 100644 R/parse_gender.R
+ create mode 100644 R/parse_names.R
+ create mode 100644 R/parse_titles.R
+ create mode 100644 R/sysdata.rda
+ create mode 100644 README.md
+ create mode 100644 listr.Rproj
+ create mode 100644 man/add_names_to_df.Rd
+ create mode 100644 man/capitalize.Rd
+ create mode 100644 man/decide_unknown_names.Rd
+ create mode 100644 man/extract_text_before_titles.Rd
+ create mode 100644 man/extract_titles.Rd
+ create mode 100644 man/find_first_name.Rd
+ create mode 100644 man/find_last_name.Rd
+ create mode 100644 man/parse_gender.Rd
+ create mode 100644 man/parse_person_gender.Rd
+ create mode 100644 man/recode_titles.Rd
+ create mode 100644 man/split_full_name.Rd
+ create mode 100644 tests/testthat.R
+ create mode 100644 tests/testthat/test_helpers.R
+ create mode 100644 tests/testthat/test_parse_gender.R
+ create mode 100644 tests/testthat/test_parse_names.R
+ create mode 100644 tests/testthat/test_parse_titles.R
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git remote add origin https://github.com/skvrnami/listr.git
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ 
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git push -u origin master
+Counting objects: 102, done.
+Delta compression using up to 4 threads.
+Compressing objects:   1% (1/92)   Compressing objects:   2% (2/92)   Compressing objects:   3% (3/92)   Compressing objects:   4% (4/92)   Compressing objects:   5% (5/92)   Compressing objects:   6% (6/92)   Compressing objects:   7% (7/92)   Compressing objects:   8% (8/92)   Compressing objects:   9% (9/92)   Compressing objects:  10% (10/92)   Compressing objects:  11% (11/92)   Compressing objects:  13% (12/92)   Compressing objects:  14% (13/92)   Compressing objects:  15% (14/92)   Compressing objects:  16% (15/92)   Compressing objects:  17% (16/92)   Compressing objects:  18% (17/92)   Compressing objects:  19% (18/92)   Compressing objects:  20% (19/92)   Compressing objects:  21% (20/92)   Compressing objects:  22% (21/92)   Compressing objects:  23% (22/92)   Compressing objects:  25% (23/92)   Compressing objects:  26% (24/92)   Compressing objects:  27% (25/92)   Compressing objects:  28% (26/92)   Compressing objects:  29% (27/92)   Compressing objects:  30% (28/92)   Compressing objects:  31% (29/92)   Compressing objects:  32% (30/92)   Compressing objects:  33% (31/92)   Compressing objects:  34% (32/92)   Compressing objects:  35% (33/92)   Compressing objects:  36% (34/92)   Compressing objects:  38% (35/92)   Compressing objects:  39% (36/92)   Compressing objects:  40% (37/92)   Compressing objects:  41% (38/92)   Compressing objects:  42% (39/92)   Compressing objects:  43% (40/92)   Compressing objects:  44% (41/92)   Compressing objects:  45% (42/92)   Compressing objects:  46% (43/92)   Compressing objects:  47% (44/92)   Compressing objects:  48% (45/92)   Compressing objects:  50% (46/92)   Compressing objects:  51% (47/92)   Compressing objects:  52% (48/92)   Compressing objects:  53% (49/92)   Compressing objects:  54% (50/92)   Compressing objects:  55% (51/92)   Compressing objects:  56% (52/92)   Compressing objects:  57% (53/92)   Compressing objects:  58% (54/92)   Compressing objects:  59% (55/92)   Compressing objects:  60% (56/92)   Compressing objects:  61% (57/92)   Compressing objects:  63% (58/92)   Compressing objects:  64% (59/92)   Compressing objects:  65% (60/92)   Compressing objects:  66% (61/92)   Compressing objects:  67% (62/92)   Compressing objects:  68% (63/92)   Compressing objects:  69% (64/92)   Compressing objects:  70% (65/92)   Compressing objects:  71% (66/92)   Compressing objects:  72% (67/92)   Compressing objects:  73% (68/92)   Compressing objects:  75% (69/92)   Compressing objects:  76% (70/92)   Compressing objects:  77% (71/92)   Compressing objects:  78% (72/92)   Compressing objects:  79% (73/92)   Compressing objects:  80% (74/92)   Compressing objects:  81% (75/92)   Compressing objects:  82% (76/92)   Compressing objects:  83% (77/92)   Compressing objects:  84% (78/92)   Compressing objects:  85% (79/92)   Compressing objects:  86% (80/92)   Compressing objects:  88% (81/92)   Compressing objects:  89% (82/92)   Compressing objects:  90% (83/92)   Compressing objects:  91% (84/92)   Compressing objects:  92% (85/92)   Compressing objects:  93% (86/92)   Compressing objects:  94% (87/92)   Compressing objects:  95% (88/92)   Compressing objects:  96% (89/92)   Compressing objects:  97% (90/92)   Compressing objects:  98% (91/92)   Compressing objects: 100% (92/92)   Compressing objects: 100% (92/92), done.
+Writing objects:   0% (1/102)   Writing objects:   1% (2/102)   Writing objects:   2% (3/102)   Writing objects:   3% (4/102)   Writing objects:   4% (5/102)   Writing objects:   5% (6/102)   Writing objects:   6% (7/102)   Writing objects:   7% (8/102)   Writing objects:   8% (9/102)   Writing objects:   9% (10/102)   Writing objects:  10% (11/102)   Writing objects:  11% (12/102)   Writing objects:  12% (13/102)   Writing objects:  13% (14/102)   Writing objects:  14% (15/102)   Writing objects:  15% (16/102)   Writing objects:  16% (17/102)   Writing objects:  17% (18/102)   Writing objects:  18% (19/102)   Writing objects:  19% (20/102)   Writing objects:  20% (21/102)   Writing objects:  21% (22/102)   Writing objects:  22% (23/102)   Writing objects:  23% (24/102)   Writing objects:  24% (25/102)   Writing objects:  25% (26/102)   Writing objects:  26% (27/102)   Writing objects:  27% (28/102)   Writing objects:  28% (29/102)   Writing objects:  29% (30/102)   Writing objects:  30% (31/102)   Writing objects:  31% (32/102)   Writing objects:  32% (33/102)   Writing objects:  33% (34/102)   Writing objects:  34% (35/102)   Writing objects:  35% (36/102)   Writing objects:  36% (37/102)   Writing objects:  37% (38/102)   Writing objects:  38% (39/102)   Writing objects:  39% (40/102)   Writing objects:  40% (41/102)   Writing objects:  41% (42/102)   Writing objects:  42% (43/102)   Writing objects:  43% (44/102)   Writing objects:  44% (45/102)   Writing objects:  45% (46/102)   Writing objects:  46% (47/102)   Writing objects:  47% (48/102)   Writing objects:  48% (49/102)   Writing objects:  49% (50/102)   Writing objects:  50% (51/102)   Writing objects:  51% (53/102)   Writing objects:  52% (54/102)   Writing objects:  53% (55/102)   Writing objects:  54% (56/102)   Writing objects:  55% (57/102)   Writing objects:  56% (58/102)   Writing objects:  58% (60/102)   Writing objects:  59% (61/102)   Writing objects:  60% (62/102)   Writing objects:  61% (63/102)   Writing objects:  64% (66/102)   Writing objects:  65% (67/102)   Writing objects:  66% (68/102)   Writing objects:  67% (69/102)   Writing objects:  68% (70/102)   Writing objects:  69% (71/102)   Writing objects:  70% (72/102)   Writing objects:  71% (73/102)   Writing objects:  72% (74/102)   Writing objects:  73% (75/102)   Writing objects:  74% (76/102)   Writing objects:  75% (77/102)   Writing objects:  76% (78/102)   Writing objects:  77% (79/102)   Writing objects:  78% (80/102)   Writing objects:  79% (81/102)   Writing objects:  80% (82/102)   Writing objects:  81% (83/102)   Writing objects:  82% (84/102)   Writing objects:  83% (85/102)   Writing objects:  83% (85/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  84% (86/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  85% (87/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  86% (88/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  87% (89/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  88% (90/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  89% (91/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  90% (92/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  91% (93/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  92% (94/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  93% (95/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  94% (96/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  95% (97/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  96% (98/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  97% (99/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  98% (100/102), 1.07 MiB | 851.00 KiB/s   Writing objects:  99% (101/102), 1.07 MiB | 851.00 KiB/s   Writing objects: 100% (102/102), 1.07 MiB | 851.00 KiB/s   Writing objects: 100% (102/102), 1.44 MiB | 1.08 MiB/s, done.
+Total 102 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), done.[K
+To https://github.com/skvrnami/listr.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git add[K[K[Kstatus
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/DC641FD7/console06/76B5B666[m
+	[31mmodified:   .Rproj.user/DC641FD7/sources/prop/INDEX[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git add- [K[K -A
+]0;~/repos/github/listrMichael-MBP:listr skvrnami$ git add -A
