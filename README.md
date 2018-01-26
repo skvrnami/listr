@@ -31,8 +31,6 @@ On the other hand, it does not require calling an API with limited amount of cal
 
 [ ] enable custom data  
 [ ] make a vignette
-[ ] recode titles into categories and turn into factor so that the levels can be compared using operators such as <, >, <= etc.
-[ ] random name generator
 
 ### Installation
 

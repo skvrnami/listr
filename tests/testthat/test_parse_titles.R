@@ -23,9 +23,10 @@ test_that("Rest of the string before academic titles is extracted correctly", {
 })
 
 test_that("The recoding of titles returns the highest attained title", {
-    expect_equal(recode_titles("prof. Karel Novák CSc."), "Professor")
-    expect_equal(recode_titles("Karel Novák Ph.D."), "Doctor")
-    expect_equal(recode_titles("Karel Novák LLM MBA"), "Master")
-    expect_equal(recode_titles("Karel Novák"), "No title")
-    expect_equal(recode_titles("Novák ml. Karel"), "No title")
+    expect_equal(as.character(recode_titles("prof. Karel Novák CSc.")), "Professor")
+    expect_equal(as.character(recode_titles("Karel Novák Ph.D.")), "Doctor")
+    expect_equal(as.character(recode_titles("Karel Novák LLM MBA")), "Master")
+    expect_equal(as.character(recode_titles("Karel Novák")), "No title")
+    expect_equal(as.character(recode_titles("Novák ml. Karel")), "No title")
+    expect_true(recode_titles("Karel Novák") < recode_titles("Mgr. Karel Novák"))
 })
