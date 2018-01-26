@@ -13,7 +13,7 @@
 #' @export
 split_full_name <- function(x, reversed = TRUE, tolerance = 0.1){
     full_name <- listr::capitalize(x)
-    names <- unlist(strsplit(full_name, "\\s"))
+    names <- unlist(strsplit(as.character(full_name), "\\s"))
 
     if (length(names) == 2){
         if (reversed) {
@@ -125,6 +125,7 @@ decide_unknown_names <- function(names, first_names, last_names){
 #' @param ... additional params passed to split_full_name function
 #' @export
 add_names_to_df <- function(df, full_name, keep = TRUE, ...){
+    df$full_name <- as.character(df$full_name)
     full_names <- purrr::map(df[[full_name]], listr::split_full_name, ...)
     tmp <- as.data.frame(do.call(rbind, full_names))
     colnames(tmp) <- c("first_name", "last_name")
