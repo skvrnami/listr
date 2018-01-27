@@ -39,6 +39,7 @@ recode_titles <- function(x){
                      grepl("\\b(ma|m[a-z]{2}|ing)\\b", x) ~ "Master", #Mgr, MgA, MA
                      grepl("\\b(bc|ba)\\b", x) ~ "Bachelor", #Bc, BcA, BA
                      TRUE ~ "No title")
-    factor(x, levels = c("No title", "Bachelor", "Master", "Doctor", "Associate Professor (docent)", "Professor"),
+    factor(x, levels = c("No title", "Bachelor", "Master",
+                         "Doctor", "Associate Professor (docent)", "Professor"),
            ordered = TRUE)
 }

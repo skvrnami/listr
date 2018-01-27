@@ -129,6 +129,8 @@ add_names_to_df <- function(df, full_name, keep = TRUE, ...){
     full_names <- purrr::map(df[[full_name]], listr::split_full_name, ...)
     tmp <- as.data.frame(do.call(rbind, full_names))
     colnames(tmp) <- c("first_name", "last_name")
+    tmp$first_name <- unlist(tmp$first_name)
+    tmp$last_name <- unlist(tmp$last_name)
     if (!keep){
         df[[full_name]] <- NULL
     }
