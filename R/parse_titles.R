@@ -33,10 +33,12 @@ extract_text_before_titles <- function(x){
 #' @export
 recode_titles <- function(x){
     x <- tolower(x)
-    dplyr::case_when(grepl("\\bprof\\b", x) ~ "Professor", # prof.
+    x <- dplyr::case_when(grepl("\\bprof\\b", x) ~ "Professor", # prof.
                      grepl("\\bdoc\\b", x) ~ "Associate Professor (docent)", # doc.
                      grepl("([a-z]+dr\\.|ph\\.+d|th\\.d|csc|drsc)\\b", x) ~ "Doctor",
                      grepl("\\b(ma|m[a-z]{2}|ing)\\b", x) ~ "Master", #Mgr, MgA, MA
                      grepl("\\b(bc|ba)\\b", x) ~ "Bachelor", #Bc, BcA, BA
                      TRUE ~ "No title")
+    factor(x, levels = c("No title", "Bachelor", "Master", "Doctor", "Associate Professor (docent)", "Professor"),
+           ordered = TRUE)
 }
