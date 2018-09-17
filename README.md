@@ -29,8 +29,8 @@ On the other hand, it does not require calling an API with limited amount of cal
 
 ### To DO:
 
+[ ] parse location (translate between municipal id, senate district id and region)
 [ ] enable custom data  
-[ ] make a vignette
 
 ### Workflow
 
