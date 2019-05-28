@@ -12,7 +12,7 @@
 #' @importFrom utils head tail
 #' @export
 split_full_name <- function(x, reversed = TRUE, tolerance = 0.1){
-    full_name <- listr::capitalize(x)
+    full_name <- stringr::str_to_title(x, locale = "cs")
     names <- unlist(strsplit(full_name, "\\s"))
 
     if (length(names) == 2){
