@@ -28,4 +28,5 @@ test_that("The recoding of titles returns the highest attained title", {
     expect_equal(recode_titles("Karel Novák LLM MBA"), "Master")
     expect_equal(recode_titles("Karel Novák"), "No title")
     expect_equal(recode_titles("Novák ml. Karel"), "No title")
+    expect_equal(recode_titles("MUDr. Ing."), "Doctor")
 })
