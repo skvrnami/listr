@@ -27,26 +27,15 @@ so it doesn't translate well into other contexts.
 On the other hand, it does not require calling an API with limited amount of calls such as 
 [genderizeR package](https://cran.r-project.org/web/packages/genderizeR/index.html).
 
-### To DO:
-
-[ ] enable custom data  
-[ ] make a vignette
-
-### Workflow
+### Installation
 
 ```
-municipal_2014 <- read.csv("municipal_2014_clean.csv")
-
-## Extract name without titles
-municipal_2014$full_name <- unlist(purrr::map(municipal_2014$name,
-                                              listr::extract_text_before_titles))
-                                              
-## Extract titles
-municipal_2014$titles <- unlist(purrr::map(municipal_2014$name, listr::extract_titles))
-
-## Split full name into first and last name columns
-municipal_2014 <- add_names_to_df(municipal_2014, "full_name", TRUE)
+devtools::install_github("skvrnami/listr")
 ```
+
+### Usage
+
+See [vignette](https://htmlpreview.github.io/?https://github.com/skvrnami/skvrnami.github.io/blob/master/rpkgs/listr.html).
 
 ..
 

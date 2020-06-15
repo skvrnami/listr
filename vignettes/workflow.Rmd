@@ -1,0 +1,88 @@
+---
+title: "Use of the listr package"
+author: "Michael Škvrňák"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+This vignette gives examples how to use the listr package. 
+
+Let's load some data first. 
+```{r}
+data <- structure(list(list_no = c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 
+1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 10L, 11L, 12L, 13L, 14L, 
+15L, 16L, 17L, 18L, 19L, 20L, 21L, 22L, 23L, 24L, 25L, 26L, 27L, 
+28L, 29L, 30L, 31L, 32L, 33L, 34L, 35L, 36L, 37L, 38L, 39L, 40L, 
+41L), name = c("Jiskra Jan", "Kopecká Iva", "Truhlářová Dana", 
+"Kalvasová Iveta", "Paulus Přemysl", "Kalvas Martin", "Hassman Jaroslav", 
+"Paulusová Marta", "Vondra Jaroslav", "Bernard Daniel", "Zikmund Roman", 
+"Jindrák Miroslav JUDr.", "Schautová Dita JUDr.", "Breburda Lubomír", 
+"Kucharczyková Ilona MVDr.", "Michal Karel Ing.", "Picka Emil JUDr.", 
+"Mamula Petr Ing. CSc.", "Bosák Belo Ing.", "Kunst Ivan Ing.", 
+"Baloun Jiří", "Čermák Lubomír", "Nádeník Robert", "Rezek Miloš Ing.", 
+"Jarolímek Josef", "Bahník Radomír", "Vamberský Ivo", "Honka Karel", 
+"Šafařík Bohumil", "Sankot David", "Novák Jaroslav Ing.", 
+"Jaroš Ladislav", "Novotný Petr", "Vaňková Blanka", "Hudeček Jan", 
+"Hájek Tomáš", "Veselý Zdeněk Ing.", "Jaroš Petr", "Nováková Vanda", 
+"Hájková Renáta", "Kysučan Pavel", "Platil Jaroslav", "Sankotová Helena", 
+"Zelenková Adolfa", "Hrušková Jiřina", "Podhajský Pavel", 
+"Spolková Jaroslava", "Novák Zbyněk", "Čermák Jan Ing.", 
+"Votruba Jan"), age = c(40L, 27L, 42L, 23L, 56L, 31L, 32L, 58L, 
+44L, 49L, 40L, 56L, 37L, 50L, 48L, 61L, 72L, 62L, 68L, 54L, 58L, 
+70L, 51L, 61L, 51L, 33L, 44L, 51L, 39L, 36L, 58L, 70L, 40L, 46L, 
+56L, 40L, 67L, 25L, 45L, 42L, 38L, 40L, 34L, 70L, 33L, 36L, 45L, 
+42L, 66L, 31L), nominate_party = c("ČP", "ČP", "ČP", "ČP", 
+"ČP", "ČP", "ČP", "ČP", "ČP", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", "NEZ/DEM", 
+"NEZ/DEM", "NEZ/DEM")), .Names = c("list_no", "name", "age", 
+"nominate_party"), row.names = c(NA, 50L), class = "data.frame")
+
+head(data)
+```
+
+Then extract full name from column which contain names mixed with academic titles. 
+The function `extract_text_before_titles` assumes that titles are located after the 
+academic titles so it extracts the part of the string before the titles.  
+
+```{r}
+data$full_name <- unlist(purrr::map(data$name, listr::extract_text_before_titles))
+data[data$name != data$full_name, c("name", "full_name")]
+```
+
+Then you can extract titles and put them in a separate column. 
+
+```{r}
+data$titles <- unlist(purrr::map(data$name, listr::extract_titles))
+data[data$titles != "", c("name", "full_name", "titles")]
+```
+
+You can recode the column with titles so that it reflects the highest attained title. 
+The recoded column contains ordered factor with levels "No title", 
+"Bachelor", "Master", "Doctor", "Associate Professor (docent)", and "Professor".
+```{r}
+data$highest_titles <- listr::recode_titles(data$titles)
+data[10:25, c("name", "full_name", "titles", "highest_titles")]
+```
+
+Then you can split full names into first and last names.
+```{r}
+data <- listr::add_names_to_df(data, "full_name")
+head(data[, c("name", "first_name", "last_name")])
+```
+
+Based on the first and last names we can estimate gender of the person.
+```{r}
+data <- listr::parse_gender(data, "first_name", "last_name")
+head(data[, c("first_name", "last_name", "gender")])
+```
+
+
